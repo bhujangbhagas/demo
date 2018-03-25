@@ -1,4 +1,4 @@
 CREATE 
-	SCHEMA IF NOT EXISTS spring-boot-demo-jpa-liqibase;
+	SCHEMA IF NOT EXISTS demo;
 SET
-	SEARCH_PATH TO spring-boot-demo-jpa-liqibase;
+	SEARCH_PATH TO demo;

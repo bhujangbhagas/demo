@@ -1,13 +1,14 @@
 databaseChangeLog:
 - changeSet:
-    id: 1521987897937-1
+    id: 1521990862358-1
     author: Admin (generated)
     changes:
     - createTable:
         columns:
         - column:
+            autoIncrement: true
             constraints:
-              nullable: false
+              primaryKey: true
             name: stock_id
             type: INT
         - column:
@@ -17,12 +18,3 @@ databaseChangeLog:
             name: stock_nm
             type: VARCHAR(256)
         tableName: stock
-- changeSet:
-    id: 1521987897937-2
-    author: Admin (generated)
-    changes:
-    - addPrimaryKey:
-        columnNames: stock_id
-        constraintName: PRIMARY
-        tableName: stock
-

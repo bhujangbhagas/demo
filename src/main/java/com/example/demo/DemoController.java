@@ -12,8 +12,8 @@ public class DemoController {
 	@Autowired
 	private StockRepository stockRepository;
 
-	@RequestMapping(value = "/demo", method = RequestMethod.GET)
-	public String demo() {
+	@RequestMapping(method = RequestMethod.GET)
+	public String create() {
 		Stock stock = new Stock("SAS", "SAS123");
 		stockRepository.save(stock);
 		return "demo";
