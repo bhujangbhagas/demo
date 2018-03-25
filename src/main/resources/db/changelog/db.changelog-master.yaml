@@ -1,0 +1,28 @@
+databaseChangeLog:
+- changeSet:
+    id: 1521987897937-1
+    author: Admin (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            constraints:
+              nullable: false
+            name: stock_id
+            type: INT
+        - column:
+            name: stock_cd
+            type: VARCHAR(256)
+        - column:
+            name: stock_nm
+            type: VARCHAR(256)
+        tableName: stock
+- changeSet:
+    id: 1521987897937-2
+    author: Admin (generated)
+    changes:
+    - addPrimaryKey:
+        columnNames: stock_id
+        constraintName: PRIMARY
+        tableName: stock
+
